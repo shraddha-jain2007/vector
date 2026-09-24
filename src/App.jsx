@@ -4,8 +4,9 @@ import vectorLogo from './assets/vector.jpeg'
 import vectorupdatedlogo from './assets/vector-updated.jpeg'
 import remaPhoto from './assets/rema_mam.jpeg'
 import harshiniPhoto from './assets/Harshini.webp'
-import elvisphoto </elvis-meneze> from './assets/elvis-menezes.jpeg'
+import elvisphoto from './assets/elvis-menezes.jpeg'
 import venkatphoto from './assets/venkat.jpeg'
+import bhuvanphoto from './assets/.jpeg'
 import ayushiphoto from './assets/ayushi.jpeg'
 import shinijineephoto from './assets/shinijinee.jpeg'
 
@@ -231,7 +232,7 @@ function App() {
             {/* Member 3 */}
             <div className="bg-stone-800 border border-gray-600 rounded-xl p-8 text-center max-w-sm hover:bg-stone-700 transition-all duration-300">
               <img 
-                src={  } 
+                src={bhuvanphoto} 
                 alt="Bhuvan N Shan" 
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-blue-400"
               />
@@ -363,7 +364,8 @@ function App() {
               </div>
             </div>
 
-           
+          </div>
+        </div>
       </section>
 
       {/* Events Gallery Auto-Scroller */}
