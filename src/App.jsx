@@ -6,7 +6,7 @@ import remaPhoto from './assets/rema_mam.jpeg'
 import harshiniPhoto from './assets/Harshini.webp'
 import elvisphoto from './assets/elvis-menezes.jpeg'
 import venkatphoto from './assets/venkat.jpeg'
-import bhuvanphoto from './assets/.jpeg'
+import bhuvanphoto from './assets/Bhuvan.jpeg'
 import ayushiphoto from './assets/ayushi.jpeg'
 import shinijineephoto from './assets/shinijinee.jpeg'
 
@@ -28,14 +28,14 @@ function App() {
           <img 
             src={ruasLogo} 
             alt="RUAS Logo" 
-            className="w-20 h-20 rounded-lg object-contain"
+            className="w-32 h-32 rounded-lg object-contain   "
           />
           
           {/* Center: Vector Logo */}
           <img 
-            src={vectorLogo} 
+            src={vectorupdatedlogo} 
             alt="Vector Club Logo" 
-            className="w-20 h-20 rounded-xl object-cover border-4 border-purple-500"
+            className="w-24 h-24 rounded-full mx-auto"
           />
           
           {/* Right: Empty space for balance */}
@@ -194,7 +194,7 @@ function App() {
                   href="https://www.linkedin.com/in/r-venkat-7a22963aa/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  className="text-blue-400 hover:text-purple-300 transition-colors"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
@@ -218,7 +218,7 @@ function App() {
                   href="https://www.linkedin.com/in/shinjinee-bera-b50ba9345/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  className="text-blue-400 hover:text-yellow-300 transition-colors"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
@@ -259,7 +259,7 @@ function App() {
                   href="https://www.linkedin.com/in/ayushi-sinha-b2a885329/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-yellow-400 hover:text-yellow-300 transition-colors"
+                  className="text-blue-400 hover:text-yellow-300 transition-colors"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
@@ -288,7 +288,7 @@ function App() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             
             {/* Rema Mam - Faculty Coordinator */}
             <div className="bg-stone-700 border border-gray-500 rounded-xl p-8 text-center max-w-sm hover:bg-stone-600 transition-all duration-300">
@@ -457,7 +457,7 @@ function App() {
           <div className="flex justify-center space-x-6 mb-6">
             {/* Instagram */}
             <a 
-              href="https://www.instagram.com/vector_the.dsaclub?igsh=MTEybWxzZ3hoeGZoMQ==" 
+              href="https://www.instagram.com/vector.the.dsaclub?stkn=MTEzd2l1cnJzb250cw== "
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-pink-400 transition-colors"
@@ -495,7 +495,7 @@ function App() {
           </div>
           
           <p className="text-gray-400">
-            © 2025 Vector Data Science Club - RUAS.
+            © 2026 Vector Data Science Club - RUAS.
           </p>
         </div>
       </footer>
