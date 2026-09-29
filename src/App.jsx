@@ -10,6 +10,10 @@ import bhuvanphoto from './assets/Bhuvan.jpeg'
 import ayushiphoto from './assets/ayushi.jpeg'
 import shinijineephoto from './assets/shinijinee.jpeg'
 
+import Blogs from './Blogs'
+import { Routes, Route } from 'react-router-dom'
+import ArticlePage from './ArticlePage'
+
 // Event images imports
 import event1 from './assets/events/1.jpg'
 import event2 from './assets/events/1741090422309.jpeg'
@@ -18,7 +22,7 @@ import event4 from './assets/events/IMG_20250213_120643396.jpg'
 import event5 from './assets/events/IMG_20250213_124224521.jpg'
 import event6 from './assets/events/WhatsApp Image 2025-09-09 at 02.00.33_49081d1a.jpg'
 
-function App() {
+function Home() {
   return (
     <div className="min-h-screen bg-stone-900 text-white font-mono">
       {/* Header Section */}
@@ -188,7 +192,7 @@ function App() {
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-purple-400"
               />
               <h3 className="text-2xl font-semibold mb-2 text-purple-400">R Venketasubramaniaen</h3>
-              <p className="text-gray-400 mb-4">Student Head</p>
+              <p className="text-gray-400 mb-4">President</p>
               <div className="flex justify-center space-x-4">
                 <a 
                   href="https://www.linkedin.com/in/r-venkat-7a22963aa/" 
@@ -212,7 +216,7 @@ function App() {
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-yellow-400"
               />
               <h3 className="text-2xl font-semibold mb-2 text-yellow-400">Shinjinee  Bera</h3>
-              <p className="text-gray-400 mb-4">Treasure Head</p>
+              <p className="text-gray-400 mb-4">Treasurer</p>
               <div className="flex justify-center space-x-4">
                 <a 
                   href="https://www.linkedin.com/in/shinjinee-bera-b50ba9345/" 
@@ -451,6 +455,12 @@ function App() {
         </div>
       </section>
 
+       
+
+       <Blogs />
+
+
+
       {/* Footer Section */}
       <footer className="bg-stone-800 border-t border-gray-700 px-6 py-8">
         <div className="max-w-6xl mx-auto text-center">
@@ -500,6 +510,15 @@ function App() {
         </div>
       </footer>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/articles/:slug" element={<ArticlePage />} />
+    </Routes>
   )
 }
 
