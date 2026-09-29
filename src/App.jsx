@@ -371,7 +371,7 @@ function Home() {
             {/* harshvardhan - Faculty Coordinator */}
             <div className="bg-stone-700 border border-gray-500 rounded-xl p-8 text-center max-w-sm hover:bg-stone-600 transition-all duration-300">
               <img 
-                src={harshvardhanphoto} 
+                src="https://placehold.co/96x96?text=HV"
                 alt="Harsha Vardhana BJ" 
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-cyan-400"
               />
