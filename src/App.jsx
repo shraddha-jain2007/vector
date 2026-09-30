@@ -3,7 +3,7 @@ import ruasLogo from './assets/ruas.png'
 import vectorLogo from './assets/vector.jpeg'
 import vectorupdatedlogo from './assets/vector-updated.jpeg'
 import remaPhoto from './assets/rema_mam.jpeg'
-import harshiniPhoto from './assets/Harshini.webp'
+import harshiniPhoto from './assets/harshini.jpeg'
 import elvisphoto from './assets/elvis-menezes.jpeg'
 import venkatphoto from './assets/venkat.jpeg'
 import bhuvanphoto from './assets/Bhuvan.jpeg'
@@ -13,6 +13,7 @@ import shinijineephoto from './assets/shinijinee.jpeg'
 import Blogs from './Blogs'
 import { Routes, Route } from 'react-router-dom'
 import ArticlePage from './ArticlePage'
+<Route path="/articles/:slug" element={<ArticlePage />} />
 
 // Event images imports
 import event1 from './assets/events/1.jpg'
@@ -191,7 +192,7 @@ function Home() {
                 alt="Venkat" 
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-purple-400"
               />
-              <h3 className="text-2xl font-semibold mb-2 text-purple-400">R Venketasubramaniaen</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-purple-400">Venketasubramaniaen</h3>
               <p className="text-gray-400 mb-4">President</p>
               <div className="flex justify-center space-x-4">
                 <a 
@@ -240,7 +241,7 @@ function Home() {
                 alt="Bhuvan N Shan" 
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-blue-400"
               />
-              <h3 className="text-2xl font-semibold mb-2 text-blue-400">Bhuvan N Shan</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-blue-400">Bhuvan Shan</h3>
               <p className="text-gray-400 mb-4">Design Head</p>
               <div className="flex justify-center space-x-4">
                 
@@ -301,10 +302,10 @@ function Home() {
                 alt="Rema Mam" 
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-rose-400"
               />
-              <h3 className="text-2xl font-semibold mb-2 text-rose-400">Dr. Rema Mam</h3>
-              <p className="text-gray-300 mb-4 font-semibold">Faculty Coordinator</p>
+              <h3 className="text-2xl font-semibold mb-2 text-rose-400">Dr. Rema V </h3>
               <p className="text-gray-300 mb-4 font-semibold">Head of Department</p>
-              <p className="text-gray-400 text-sm mb-4">Data Science and Analytics Department</p>
+              <p className="text-gray-300 mb-4 font-semibold">Faculty Coordinator</p>
+              <p className="text-gray-400 text-sm mb-4">Data Sciences and Analytics Department</p>
               <div className="flex justify-center">
                 <a 
                   href="https://www.linkedin.com/in/drremavenkitaraman/" 
@@ -324,9 +325,9 @@ function Home() {
               <img 
                 src={harshiniPhoto} 
                 alt="Harshini N" 
-                className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-cyan-400"
+                className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-red-400"
               />
-              <h3 className="text-2xl font-semibold mb-2 text-cyan-400">Ms. Harshini N</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-red-400">Ms. Harshini </h3>
               <p className="text-gray-300 mb-4 font-semibold">Faculty Coordinator</p>
               <p className="text-gray-400 text-sm mb-4">Vector Data Science Club</p>
               <div className="flex justify-center">
@@ -473,6 +474,32 @@ function Home() {
        
 
        <Blogs />
+
+
+
+
+       {/* Instagram Feed Section */}
+      <section className="px-6 py-16 bg-stone-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+              The Vector Social Frame 
+            </h2>
+            <p className="text-xl text-gray-400">
+              Live from @vector.the.dsaclub
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <iframe
+              src="https://www.juicer.io/api/feeds/vector-the-dsaclub/iframe"
+              className="w-full max-w-4xl h-[300px] rounded-xl border border-gray-400"
+              frameBorder="0"
+              title="Instagram Feed"
+            ></iframe>
+          </div>
+        </div>
+      </section>
 
 
 

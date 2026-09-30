@@ -3,7 +3,8 @@ import {client} from './sanityClient'
 import {Link} from 'react-router-dom'
 
 const query = `*[_type == "post" && defined(slug.current)] | order(publishedAt desc){
-  _id, title, author, authorLinkedIn, topic, excerpt, publishedAt,"slug": slug.current,
+  _id, title, author, topic, excerpt, publishedAt,
+  "slug": slug.current,
   "imageUrl": mainImage.asset->url
 }`
 
@@ -30,7 +31,11 @@ export default function Blogs() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {posts.map((post) => (
-            <Link key={post._id} to={`/articles/${post.slug}`} className="bg-stone-800 border border-gray-600 rounded-xl overflow-hidden max-w-sm hover:bg-stone-700 transition-all duration-300 block">
+            <Link
+              key={post._id}
+              to={`/articles/${post.slug}`}
+              className="bg-stone-800 border border-gray-600 rounded-xl overflow-hidden max-w-sm w-full hover:bg-stone-700 transition-all duration-300 block"
+            >
               {post.imageUrl && (
                 <img src={post.imageUrl} alt={post.title} className="w-full h-48 object-cover" />
               )}
@@ -38,16 +43,7 @@ export default function Blogs() {
                 {post.topic && <p className="text-sm text-purple-400 mb-2">{post.topic}</p>}
                 <h3 className="text-xl font-semibold mb-2 text-white">{post.title}</h3>
                 <p className="text-gray-400 text-sm mb-4">{post.excerpt}</p>
-                <p className="text-gray-300 text-sm">
-                  By{' '}
-                  {post.authorLinkedIn ? (
-                    <a href={post.authorLinkedIn} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
-                      {post.author}
-                    </a>
-                  ) : (
-                    post.author
-                  )}
-                </p>
+                <p className="text-gray-300 text-sm">By {post.author}</p>
               </div>
             </Link>
           ))}
