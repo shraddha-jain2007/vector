@@ -5,6 +5,7 @@ import vectorupdatedlogo from './assets/vector-updated.jpeg'
 import remaPhoto from './assets/rema_mam.jpeg'
 import harshiniPhoto from './assets/harshini.jpeg'
 import elvisphoto from './assets/elvis-menezes.jpeg'
+import harshaphoto from './assets/harsha.jpeg'
 import venkatphoto from './assets/venkat.jpeg'
 import bhuvanphoto from './assets/Bhuvan.jpeg'
 import ayushiphoto from './assets/ayushi.jpeg'
@@ -20,8 +21,13 @@ import event1 from './assets/events/1.jpg'
 import event2 from './assets/events/1741090422309.jpeg'
 import event3 from './assets/events/5.jpg'
 import event4 from './assets/events/IMG_20250213_120643396.jpg'
-import event5 from './assets/events/IMG_20250213_124224521.jpg'
-import event6 from './assets/events/WhatsApp Image 2025-09-09 at 02.00.33_49081d1a.jpg'
+import matrix1 from './assets/events/matrix1.jpeg'
+import matrix2 from './assets/events/matrix2.jpeg'
+import matrix3 from './assets/events/matrix3.jpeg'
+import matrix4 from './assets/events/matrix4.jpeg'
+import matrix5 from './assets/events/matrix5.jpeg'
+import matrix6 from './assets/events/matrix6.jpeg'
+
 
 function Home() {
   return (
@@ -372,7 +378,7 @@ function Home() {
             {/* harshvardhan - Faculty Coordinator */}
             <div className="bg-stone-700 border border-gray-500 rounded-xl p-8 text-center max-w-sm hover:bg-stone-600 transition-all duration-300">
               <img 
-                src="https://placehold.co/96x96?text=HV"
+                src={harshaphoto}
                 alt="Harsha Vardhana BJ" 
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-cyan-400"
               />
@@ -380,7 +386,7 @@ function Home() {
               <p className="text-gray-300 mb-4 font-semibold">Faculty Coordinator</p>
               <p className="text-gray-400 text-sm mb-4">Vector Data Science Club</p>
               <div className="flex justify-center">
-                
+              
               </div>
             </div>
 
@@ -402,8 +408,44 @@ function Home() {
           
           {/* Auto-scrolling container */}
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll-infinite space-x-6">
+            <div className="flex animate-scroll-infinite space-x-10">
               {/* First set of images */}
+              <img 
+                src={matrix1} 
+                alt="matrix1" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix2} 
+                alt="matrix2" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix3} 
+                alt="matrix3" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix4} 
+                alt="matrix4" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix5} 
+                alt="matrix5" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix6} 
+                alt="matrix6" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
               <img 
                 src={event1} 
                 alt="Event 1" 
@@ -422,21 +464,47 @@ function Home() {
               <img 
                 src={event4} 
                 alt="Event 4" 
-                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
-              />
-              <img 
-                src={event5} 
-                alt="Event 5" 
-                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
-              />
-              <img 
-                src={event6} 
-                alt="Event 6" 
                 className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
               />
               
               {/* Duplicate set for seamless loop */}
               <img 
+                src={matrix1} 
+                alt="matrix1" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix2} 
+                alt="matrix2" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix3} 
+                alt="matrix3" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix4} 
+                alt="matrix4" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix5} 
+                alt="matrix5" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
+                src={matrix6} 
+                alt="matrix6" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+
+              <img 
                 src={event1} 
                 alt="Event 1" 
                 className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
@@ -454,16 +522,6 @@ function Home() {
               <img 
                 src={event4} 
                 alt="Event 4" 
-                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
-              />
-              <img 
-                src={event5} 
-                alt="Event 5" 
-                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
-              />
-              <img 
-                src={event6} 
-                alt="Event 6" 
                 className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
               />
             </div>
